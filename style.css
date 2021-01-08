@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  flex: 1;
+  flex: 1 0 auto;
   margin: 0;
   background-color: #EEE;
 }
@@ -44,7 +44,7 @@ body {
 
 #copydiv {
   position: absolute;
-  transform: translateY(-100%);
+  transform: translateY(-115%);
   left: 25%;
 }
 
