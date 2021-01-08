@@ -1,0 +1,87 @@
+html {
+  min-height: 100%;
+  display: flex;
+}
+
+body {
+  flex: 1;
+  margin: 0;
+  background-color: #EEE;
+}
+
+.flex-container {
+  display: flex;
+  height: 100%;
+}
+
+#left {
+  flex: 0 0 250px;
+  border-right: 3px solid black;
+  text-align: center;
+  background-color: #CCC;
+}
+
+#right {
+  flex: 1 0 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+#myTabContent {
+  position: relative;
+  flex: 1 0 auto;
+}
+
+#main {
+  height: calc(100% - 3px);
+  width: calc(100% - 3px);
+}
+
+#code, #code textarea {
+  height: 100%;
+  width: 100%;
+}
+
+#copydiv {
+  position: absolute;
+  transform: translateY(-100%);
+  left: 25%;
+}
+
+#selected-left {
+  color: #2A0;
+}
+
+#selected-main, #selected-delete {
+  color: #F00;
+}
+
+#left button {
+  margin: 5px;
+}
+
+#left .select-outline, .select-outline:focus {
+  outline: 3px solid #2A0;
+}
+
+#main.select-outline, #main .select-outline, .select-outline:focus {
+  outline: 3px solid #F00;
+}
+
+.select-outline, .select-outline:focus {
+  position: relative;
+  z-index: 1;
+}
+
+img {
+  height: 100px;
+  background-color: #777;
+}
+
+.container, .row div[class^=col] {
+  border: 1px solid #888;
+}
+
+.hidden {
+  display: none;
+}

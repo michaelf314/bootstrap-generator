@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="flex-container">
+      <div id="left">
+        <div id="insert">
+          <b>Insert <span id="selected-left">button</span>:</b><br>
+          <button type="button" class="btn btn-primary" id="beforebegin">before begin</button>
+          <button type="button" class="btn btn-primary" id="afterbegin">after begin</button>
+          <button type="button" class="btn btn-primary" id="beforeend">before end</button>
+          <button type="button" class="btn btn-primary" id="afterend">after end</button>
+          <br><b>of <span id="selected-main">main</span></b>
+        </div>
+        <hr>
+        <!-- <div class="d-grid gap-2" id="components"> -->
+        <div id="components">
+          <button type="button" class="btn btn-primary col-4" id="button">button</button>
+          <button type="button" class="btn btn-primary col-4" id="card">card</button>
+          <button type="button" class="btn btn-primary col-4" id="carousel">carousel</button>
+          <button type="button" class="btn btn-primary col-4" id="form">form</button>
+          <button type="button" class="btn btn-primary col-4" id="navbar">navbar</button>
+          <button type="button" class="btn btn-primary col-4" id="row">row</button>
+        </div>
+        <div id="button-options"></div>
+        <div class="hidden" id="card-options"></div>
+        <div class="hidden" id="carousel-options"></div>
+        <div class="hidden" id="form-options"></div>
+        <div class="hidden" id="navbar-options"></div>
+        <div class="hidden" id="row-options"></div>
+        <hr>
+        <button type="button" class="btn btn-primary" id="delete">Delete</button> <b><span id="selected-delete">main</span></b>
+      </div>
+      <div id="right">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="main-tab" data-bs-toggle="tab" href="#main" role="tab" aria-controls="main" aria-selected="true">Main</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="code-tab" data-bs-toggle="tab" href="#code" role="tab" aria-controls="code" aria-selected="false">View code</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="main tab-pane fade show active" id="main" role="tabpanel" aria-labelledby="main-tab"></div>
+          <div class="tab-pane fade" id="code" role="tabpanel" aria-labelledby="code-tab">
+            <div id="copydiv">
+              <button type="button" class="btn btn-primary btn-sm me-2" id="copy">Copy html to clipboard</button>
+              <span class="hidden" id="copied">Copied</span>
+            </div>
+            <textarea readonly></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="code.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.13.0/beautify-html.min.js"></script>
+  </body>
+</html>
