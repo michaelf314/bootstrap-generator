@@ -16,7 +16,6 @@ body {
 
 #left {
   flex: 0 0 250px;
-  border-right: 3px solid black;
   text-align: center;
   background-color: #CCC;
 }
