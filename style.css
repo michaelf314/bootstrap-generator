@@ -1,23 +1,21 @@
-html {
-  min-height: 100%;
-  display: flex;
-}
-
 body {
-  flex: 1 0 auto;
+  min-height: 100%;
   margin: 0;
-  background-color: #EEE;
+  background-color: #CCC;
 }
 
 .flex-container {
   display: flex;
-  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 #left {
   flex: 0 0 250px;
   text-align: center;
-  background-color: #CCC;
 }
 
 #right {
@@ -34,6 +32,7 @@ body {
 #main {
   height: calc(100% - 3px);
   width: calc(100% - 3px);
+  background-color: #EEE;
 }
 
 #code, #code textarea {

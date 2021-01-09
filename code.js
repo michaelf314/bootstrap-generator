@@ -209,7 +209,7 @@ code.row = () => {
   return `<div class="container selectable">
     <div class="row">
       ${`<div class="col selectable">
-        Column (double-click to select the row)
+        Column (double-click to select row)
       </div>\n`.repeat(numCols)}
     </div>
   </div>`;
